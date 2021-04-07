@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 
 // Style imports
 import './materialize.scss';

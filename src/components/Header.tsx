@@ -17,7 +17,7 @@ import logo from '../res/logo.png';
 import { routes } from './config';
 
 const Header: React.FC = () => {
-  const [sidenavShowing, setSidenavShowing] = useState<Boolean>(false);
+  const [_, setSidenavShowing] = useState<Boolean>(false);
   const loginContext = useContext(LoginContext);
 
   return (
@@ -34,7 +34,11 @@ const Header: React.FC = () => {
           <li id="brand-logo">
             <Link to={routes.home} onClick={() => {}}>
               The Smart Grower
-              <img src={logo} style={{ width: '3rem', height: '3rem' }} />
+              <img
+                src={logo}
+                alt=""
+                style={{ width: '3rem', height: '3rem' }}
+              />
             </Link>
           </li>
           {/* vvv for flex positioning if needed vvv */}
