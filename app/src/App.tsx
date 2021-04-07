@@ -33,7 +33,7 @@ const App: React.FC = () => {
             alignItems: 'center',
           }}
         >
-          <h2 style={{ marginBottom: '2rem' }}>Your Plant</h2>
+          <h2 style={{ marginBottom: '2rem' }}>Your Plant&apos;s Metrics</h2>
           <div
             style={{
               display: 'flex',
