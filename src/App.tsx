@@ -33,12 +33,12 @@ const App: React.FC = () => {
             alignItems: 'center',
           }}
         >
-          <h2 style={{ marginBottom: '2rem' }}>Your Plant&apos;s Metrics</h2>
+          <h3 style={{ marginBottom: '2rem' }}>Your Plant&apos;s Metrics:</h3>
           <div
             style={{
               display: 'flex',
               justifyContent: 'center',
-              alignItems: 'center',
+              alignItems: 'flex-start',
             }}
           >
             <img src={data} alt="" />
