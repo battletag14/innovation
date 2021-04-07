@@ -1,0 +1,161 @@
+@import '../materialize';
+
+// Global styles
+:root {
+  // Primary colors
+  --color-accent: #17252a;
+  --color-primary-dark: #17252a;
+  --color-primary: #17252a;
+  --color-contrast-light: #feffff;
+  --color-contrast: #eef3f1;
+
+  // Utility colors
+  --color-darken-background: #0a0a0acc;
+  --color-selected: #41414130;
+  --color-selected-light: #ffffff18;
+
+  // Nav variables
+  --navbar-height: 5rem;
+  --page-height: calc(100vh - var(--navbar-height));
+}
+
+input[type='text']:focus {
+  border-bottom: 1px solid #77919a !important;
+  box-shadow: 0 1px 0 0 #77919a !important;
+}
+
+.button {
+  background-color: #77919a !important;
+}
+.button:focus {
+  background-color: #77919a !important;
+}
+
+/* label color */
+.input-label label {
+  color: #77919a !important;
+}
+/* label focus color */
+input[type='text']:focus + label {
+  color: #77919a !important;
+}
+
+body {
+  background-color: var(--color-primary);
+}
+
+html * {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  color: var(--color-contrast);
+}
+.invert-colors {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    color: var(--color-accent);
+  }
+}
+@media #{$small-and-down} {
+  // h3 {
+  //   font-size: 1.5rem !important;
+  // }
+  // h5 {
+  //   font-size: 1rem !important;
+  // }
+  // h6 {
+  //   font-size: 0.8rem !important;
+  // }
+}
+
+// Flex positioning
+.flex-row {
+  // Set flex display
+  display: flex;
+  flex-direction: row;
+}
+.flex-col {
+  // Set flex display
+  display: flex;
+  flex-direction: column;
+}
+.flex-container {
+  // Set inner padding
+  width: 100%;
+  padding: 0 10%;
+  @media #{$medium-and-down} {
+    padding: 0 2rem;
+  }
+  @media #{$small-and-down} {
+    padding: 0 1rem;
+  }
+}
+.flex-1 {
+  flex: 1;
+}
+.center {
+  justify-content: center;
+}
+.center-v {
+  align-items: center;
+}
+
+// Buttons
+// .button {
+//   padding: 1rem 3rem;
+//   margin: 0 1rem;
+//   border-radius: 1rem;
+
+//   color: var(--color-contrast-light);
+// }
+// .fixed-width-button {
+//   width: 20rem;
+// }
+// @media #{$small-and-down} {
+//   .button {
+//     padding: 0.5rem 1rem;
+//   }
+// }
+
+// Text classes
+.thin-text {
+  font-weight: 100;
+}
+.light-text {
+  font-weight: 300;
+}
+.medium-text {
+  font-weight: 500;
+}
+.semibold-text {
+  font-weight: 600;
+}
+
+// Shared styles
+// div.main-div {
+//   min-height: var(--page-height);
+// }
+
+// Utility styles
+.no-margin {
+  margin: 0;
+}
+.bottom-margin {
+  margin-bottom: 1rem;
+}
+.large-bottom-margin {
+  margin-bottom: 3rem;
+}
