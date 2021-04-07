@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "google",
+    "prettier",
+    "plugin:react/recommended"
+  ],
+  "plugins": [
+    "prettier",
+    "react"
+  ],
+  "rules": {
+    "no-unused-vars": "warn",
+    "prefer-const": "warn",
+    "eqeqeq": "warn",
+    "react/prop-types": "off"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true
+  }
+}
